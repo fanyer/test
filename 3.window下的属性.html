@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	window.onload=function (argument) {
+		var total='';  //不赋值的话就会在开始有个undefined
+		var index=0;
+
+		for( x in window){
+			console.log(x);
+			
+			index++;
+
+			var attr= index+'.'+x+'<br />';
+			total+=attr;			
+		}
+		
+		alert(typeof(total));
+		document.write(total);
+
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
